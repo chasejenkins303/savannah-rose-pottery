@@ -1,0 +1,68 @@
+body * {
+    box-sizing: border-box;
+}
+
+.topbar{
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    background-color: lightblue;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.scroll-message{
+    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-message>h1{
+    max-width: 60vw;
+    text-align: center;
+}
+
+.web-name{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 1.8em;
+    padding-left: 20px;
+}
+
+.contact{
+    font-size: 1.2em;
+    padding-right: 20px;
+}
+
+.image-container{
+    /* height: 40vh;
+    width: 30vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image-box>img{
+    margin-top: 10vh;
+    height: 50vh;
+    width: 30vw;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
