@@ -24,8 +24,9 @@ function reveal() {
     // <img src="./images/Droplet.jpeg">
     // </div>
     return `
-    <div class="image-box">
+    <div class="image-box reveal">
         <img class="main-image" src="${data2.image_loc}"/>
+        <p>${data2.caption}</p>
     </div>
     ` 
   }
