@@ -14,4 +14,10 @@ function reveal() {
     }
   }
 
+  function makeDiv(){
+    htmlChunk = 
+    document.querySelector('.image-box').innerHTML = `<img class="main-image" src="./images/rule_of_thirds_bad.jpeg"/>` 
+  }
+  makeDiv()
+
   window.addEventListener("scroll", reveal);

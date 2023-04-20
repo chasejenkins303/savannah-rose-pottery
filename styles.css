@@ -18,7 +18,7 @@ body * {
 }
 
 .scroll-message{
-    min-height: 100vh;
+    min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,8 +52,8 @@ body * {
 
 .image-box>img{
     margin-top: 10vh;
-    height: 50vh;
-    width: 30vw;
+    width: 50vw;
+    height: auto;
 }
 
 .reveal{
