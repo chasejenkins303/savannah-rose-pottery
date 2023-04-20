@@ -3,6 +3,10 @@ body * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body{
+    margin: 0px;
+}
+
 .topbar{
     z-index: 1;
     top: 0;
@@ -19,16 +23,22 @@ body * {
 }
 
 .scroll-message{
-    min-height: 60vh;
+  min-height: 100vh;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 10vh;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),url("./images/back.jpg")
 }
 
 .scroll-message>h1{
     max-width: 60vw;
     text-align: center;
+    color: white;
 }
 
 .web-name{
@@ -49,6 +59,7 @@ body * {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(rgb(226, 114, 91), rgb(246,114,91));
 
 }
 
