@@ -26,7 +26,7 @@ function reveal() {
     return `
     <div class="image-box reveal">
         <img class="main-image" src="${data2.image_loc}"/>
-        <p>${data2.caption}</p>
+        <p class="caption">${data2.caption}</p>
     </div>
     ` 
   }

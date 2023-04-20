@@ -76,7 +76,7 @@ body{
 
 .image-box>img{
     margin-top: 10vh;
-    min-width: 30vw;
+    width: 30vw;
     height: auto;
 }
 
@@ -91,6 +91,10 @@ body{
     opacity: 1;
   }
 
+  .caption{
+    font-size: 1.7em;
+  }
+
 @media (max-width: 800px) {
     .image-box>img{
         margin-top: 10vh;
@@ -98,9 +102,19 @@ body{
         height: auto;
     }
 
+    .image-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        border: solid 4px gray;
+        margin-top: 15px;
+        background: linear-gradient(rgb(158, 158, 158),lightgray);
+    }
 
     
-    
+
 
 
 }
