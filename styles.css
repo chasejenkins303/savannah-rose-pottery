@@ -92,6 +92,8 @@ body{
   }
 
   .caption{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
     font-size: 1.7em;
   }
 

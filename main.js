@@ -18,11 +18,13 @@ function reveal() {
     }
   }
 
+  let counter = 0
  const makeDiv = (data2) => {
     console.log(data2)
     // <div class="image-box">
     // <img src="./images/Droplet.jpeg">
     // </div>
+    counter++
     return `
     <div class="image-box reveal">
         <img class="main-image" src="${data2.image_loc}"/>
@@ -30,11 +32,13 @@ function reveal() {
     </div>
     ` 
   }
+ 
 
   function showData(){
     const htmlChunk = data.map(makeDiv).join('')
+    //const background=data.map(makeBackground)
     document.querySelector('.image-container').innerHTML = htmlChunk
-  }
+    }
   // data.map(makeDiv).join('')
   // document.querySelector('.image-box').innerHTML =  
   showData()
