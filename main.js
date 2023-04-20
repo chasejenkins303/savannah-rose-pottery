@@ -1,3 +1,7 @@
+import {data} from "./data.js"
+
+console.log(data)
+
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
     console.log(reveals.length)
@@ -14,9 +18,24 @@ function reveal() {
     }
   }
 
-  function makeDiv(){
-    document.querySelector('.image-box').innerHTML = `<img class="main-image" src="./images/rule_of_thirds_bad.jpeg"/>` 
+ const makeDiv = (data2) => {
+    console.log(data2)
+    // <div class="image-box">
+    // <img src="./images/Droplet.jpeg">
+    // </div>
+    return `
+    <div class="image-box">
+        <img class="main-image" src="${data2.image_loc}"/>
+    </div>
+    ` 
   }
-  makeDiv()
+
+  function showData(){
+    const htmlChunk = data.map(makeDiv).join('')
+    document.querySelector('.image-container').innerHTML = htmlChunk
+  }
+  // data.map(makeDiv).join('')
+  // document.querySelector('.image-box').innerHTML =  
+  showData()
 
   window.addEventListener("scroll", reveal);
