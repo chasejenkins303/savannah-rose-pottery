@@ -14,7 +14,7 @@ body{
     height: 10vh;
     width: 100vw;
     background-color: lightblue;
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,9 +30,10 @@ body{
   align-items: center;
   padding-top: 10vh;
   background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),url("./images/back.jpg")
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)
+  ),url("./images/back.jpg");
+  background-size: cover;
 }
 
 .scroll-message>h1{
@@ -59,7 +60,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(226, 114, 91), rgb(246,114,91));
+    background: linear-gradient(lightblue, rgb(182, 218, 230));
 
 }
 
@@ -69,9 +70,10 @@ body{
     justify-content: center;
     align-items: center;
     width: 50vw;
-    border: solid 4px gray;
-    margin-top: 15px;
-    background: linear-gradient(rgb(158, 158, 158),lightgray);
+    box-shadow: 10px 10px 5px gray;
+    /* border: solid 4px gray; */
+    margin-top: 20px;
+    background: rgb(31, 31, 31);
 }
 
 .image-box>img{
@@ -92,9 +94,10 @@ body{
   }
 
   .caption{
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     padding: 10px;
     font-size: 1.7em;
+    color: rgb(231, 231, 231);
   }
 
 @media (max-width: 800px) {

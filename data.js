@@ -10,6 +10,10 @@ export const data =[
     {
         image_loc: "./images/Droplet.jpeg",
         caption: "Test caption 3"
+    },
+    {
+        image_loc: "./images/back.jpg",
+        caption: "Test caption 4"
     }
 
 ]
